@@ -21,10 +21,10 @@ class ViewController: UIViewController, FactualAPIDelegate {
         
         
         
-        let categories : [Int] = [312, 347]
-        let queryObject : FactualQuery = FactualQuery()
-        let rowFilter : FactualRowFilter = FactualRowFilter.fieldName("category_ids", inArray: categories)
-        let apiObject : FactualAPI = FactualAPI(APIKey: "Xd9tbnhThCcqUqvLoFlFxEgwlHanel7qvBwBpdLd", secret: "0dnD4zBBb5fuGRc4xrQAznM5Vm7wxOguMgwmSEvd")
+//        let categories : [Int] = [312, 347]
+//        let queryObject : FactualQuery = FactualQuery()
+//        let rowFilter : FactualRowFilter = FactualRowFilter.fieldName("category_ids", inArray: categories)
+        let apiObject : FactualAPI = FactualAPI(APIKey: key, secret: secret)
         apiObject.queryTable("places-us", optionalQueryParams: nil, withDelegate: self)
         
         
