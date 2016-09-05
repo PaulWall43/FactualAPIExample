@@ -13,7 +13,6 @@ Here are the steps that I took to get this working:
 4. For Swift projects create a bridging header so your swift code can interact with the Objective-C framework.
 
 5. In the bridging header import what you need from the framework in your swift files.
-(Ex: import <FactualSDK/FactualAPI.h> import <FactualSDK/FactualQuery.h>)
 
 6. Refer to the examples in https://github.com/Factual/factual-ios-sdk for how to actually query the database
 Here's one example in swift:
